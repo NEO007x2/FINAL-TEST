@@ -1,30 +1,49 @@
-/* style.css */
-
-/* ตั้งค่าสีพื้นหลังและฟอนต์ของทั้งหน้า */
-body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+/* สไตล์ของเมนูขีดสาม */
+.hamburger-menu {
+    font-size: 30px;
+    cursor: pointer;
+    display: inline-block;
 }
 
-/* กำหนดลักษณะของข้อความใน <h1> */
-h1 {
-    color: #333;
+/* ซ่อนเมนูเมื่อเริ่มต้น */
+.menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* สไตล์ของรายการในเมนู */
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 10px;
     text-align: center;
 }
 
-/* การตั้งค่าลักษณะของเมนู */
-nav {
-    text-align: center;
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* เมื่อเมนูเปิด */
+.menu.show {
+    display: block;
+}
+
+/* สไตล์เนื้อหาของหน้า */
+section {
+    padding: 20px;
     margin-top: 20px;
 }
 
-nav a {
-    text-decoration: none;
-    color: #007bff;
-    font-size: 18px;
-    margin: 0 10px;
-}
-
-nav a:hover {
-    color: #0056b3;
+h1 {
+    color: #333;
 }
